@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dn-2y-31m">
+                                <rect key="frame" x="126" y="409" width="141" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KyH-Er-cW1"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="2" height="3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Change">
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                    <color key="baseBackgroundColor" red="0.83874837338639185" green="0.84172994021287895" blue="0.81608024423318182" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ChangeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lr6-O9-E9Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mesmerizing Magnet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqh-KE-DNt">
+                                <rect key="frame" x="45" y="134" width="302" height="47"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" staticText="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="sao-Ez-QEr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="31"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemGray5Color"/>
+                                <size key="shadowOffset" width="3" height="5"/>
+                            </label>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_3539" translatesAutoresizingMaskIntoConstraints="NO" id="Oek-FV-5GD">
+                                <rect key="frame" x="45" y="211" width="316" height="164"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                </preferredSymbolConfiguration>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oek-FV-5GD" firstAttribute="top" secondItem="cqh-KE-DNt" secondAttribute="bottom" constant="25" id="DRi-uk-dEh"/>
+                            <constraint firstItem="4dn-2y-31m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="IRe-YQ-Kgk"/>
+                            <constraint firstItem="cqh-KE-DNt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OJW-y5-oew"/>
+                            <constraint firstItem="Oek-FV-5GD" firstAttribute="centerX" secondItem="4dn-2y-31m" secondAttribute="centerX" id="QZz-7r-Q9d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4dn-2y-31m" secondAttribute="bottom" constant="389" id="Xd3-fP-oK0"/>
+                            <constraint firstItem="cqh-KE-DNt" firstAttribute="centerX" secondItem="Oek-FV-5GD" secondAttribute="centerX" id="asx-Z6-BP0"/>
+                            <constraint firstItem="4dn-2y-31m" firstAttribute="top" secondItem="Oek-FV-5GD" secondAttribute="bottom" constant="29" id="bA4-i3-uHM"/>
+                            <constraint firstItem="Oek-FV-5GD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="fM5-Cr-C6k"/>
+                            <constraint firstItem="cqh-KE-DNt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="uOS-MG-0zE"/>
+                            <constraint firstItem="cqh-KE-DNt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="wEb-z1-mWG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="Oek-FV-5GD" id="2lD-q0-ajR"/>
+                        <outlet property="MesmerizingMagnetLabel" destination="cqh-KE-DNt" id="gbR-CQ-pIe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_3539" width="1326.5" height="1321"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
